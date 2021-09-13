@@ -1,0 +1,289 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 70%;
+    margin: 0 auto; */
+}
+:root{
+    --m-color : #FF136F;
+}
+nav{
+    display: flex;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+    margin: 0 auto;
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+
+
+
+
+/* header */
+
+.header-content-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    position: relative;
+}
+figure{
+    position: relative;
+    margin: 0;
+    left: -31%;
+    display: flex;
+    width: 507%;
+    /* animation: 18s slidy infinite;  */
+    justify-content: space-around;
+}
+
+
+
+.header-img-part img{
+    width: 300px;
+}
+header{
+    max-width: 70%;
+    margin: 100px auto;
+    background-color: #FCEAE8;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.header-content-container p{
+    color: grey;
+}
+.header-content-container h2 {
+    color: var(--m-color);
+    font-size: 2em;
+}
+.header-content-container h1{
+    font-size: 2.5em;
+    color: black;
+}
+
+
+
+a.buy-now{
+    background-image: linear-gradient(45deg, #e60b62, var(--m-color));
+    text-decoration: none;
+    color: white;
+    padding:15px;
+    border-radius: 8px;
+    margin-top: 18px;
+    width: 66px;
+    display: block;
+}
+@keyframes slidy {
+    0% { 
+    left: -31%; 
+    }
+    20%{
+        left: -31%; 
+    }
+    40%{
+        left: -205%;
+    }
+    60%{
+        left: -205%;
+    }
+    80%{
+        left: -373%;
+    }
+
+    95%{
+        left: -373%;
+        
+    }
+}
+
+
+/* end */
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+.column-org{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-content: center;
+}
+.department-container{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    font-size: 23px;
+}
+.card-con-style{
+    /* width: 400px; */
+    border-radius: 8px;
+    /* margin-left: 20px; */
+}
+.department-container img{
+    width: 100px;
+}
+.watch-cat{
+    background-color: orange;
+}
+.bag-cat{
+    background-color: rgb(112, 52, 112);
+}
+.shoes-cat{
+    background-color: blue;
+}
+.div-margin-top{
+    margin-top: 113px;
+}
+
+
+.content-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content-card img {
+    width: 100%;
+}
+.content-card-description{
+    padding: 10px;
+}
+.price{
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+.price::before{
+    content: "$";
+}
+.subscribe-sec{
+    background-color: #FCEAE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 50px;
+}
+input {
+    padding: 13px;
+    border-radius: 8px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+@media (max-width:1302px) {
+    .header-img-part img{
+        width: 200px;
+    }
+    .header-text-part {
+        width: 394px;
+        font-size: 14px;
+    }
+    
+
+}
+@media (max-width:768px) {
+    .column-org {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+}
+@media (max-width:425px) {
+    .column-org {
+        grid-template-columns: 1fr;
+    }
+    .header-content-container{
+        flex-direction: column-reverse;
+        margin-top: -38px;
+
+    }
+    .header-text-part {
+        width: 187px;
+        font-size: 9px;
+        margin-top: 82px;
+        margin-top: 4px;
+    }
+    .header-img-part img {
+        width: 107px;
+        display: block;
+        margin-top: 0;
+        margin-left: -49px;
+    }
+    header{
+        height: 357px;
+    }
+}
+@media (max-width: 878px) {
+    .header-content-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-img-part img {
+        width: 162px;
+        display: inline-block;
+        margin-top: -139px;
+    margin-left: 277px;
+    }
+}
+@media (max-width:643px) {
+    .header-content-container{
+        flex-direction: column-reverse;
+        margin-top: -38px;
+
+    }
+    .header-text-part {
+        width: 187px;
+        font-size: 9px;
+        margin-top: 82px;
+        margin-top: 4px;
+    }
+    .header-img-part img {
+        width: 107px;
+        display: block;
+        margin-top: 0;
+        margin-left: -49px;
+    }
+}
+
+
+
+
+
+
+.shoes-card-container {
+    display: contents;
+}
