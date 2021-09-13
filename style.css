@@ -40,7 +40,7 @@ figure{
     left: -31%;
     display: flex;
     width: 507%;
-    /* animation: 18s slidy infinite;  */
+    animation: 10s slidy infinite; 
     justify-content: space-around;
 }
 
