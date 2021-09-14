@@ -1,0 +1,13 @@
+.bg-color-custom{
+    background-color: #FEEAE9;
+}
+.custom-img-size img{
+    width: 100px;
+}
+.custom-text{
+    color: white;
+}
+.custom-footer{
+    border: 0;
+    background-color: white;
+}
